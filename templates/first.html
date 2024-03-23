@@ -1,0 +1,245 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>first</title>
+    <link href="{% static 'css/uikit.min.css' %}" rel="stylesheet">
+    <script src="{% static 'js/uikit.min.js' %}"></script>
+    <script src="{% static 'js/uikit-icons.min.js'  %}"></script>
+</head>
+<body>
+<ul uk-accordion>
+    <li class="uk-open">
+        <a class="uk-accordion-title" href="#">manage.py</a>
+        <div class="uk-accordion-content">
+            <p>Это основной файл, который используется для управления проектом Django. Он позволяет выполнять различные задачи, такие как запуск сервера разработки, создание миграции и т.д.</p>
+        </div>
+    </li>
+    <li>
+        <a class="uk-accordion-title" href="#">settings.py</a>
+        <div class="uk-accordion-content">
+            <p>Содержит настройки проекта, такие как параметры базы данных, секретные ключи и другие параметры конфигурации.</p>
+        </div>
+    </li>
+    <li>
+        <a class="uk-accordion-title" href="#">urls.py</a>
+        <div class="uk-accordion-content">
+            <p>Файл URL-адресов, содержащий список URL-маршрутов для вашего проекта.</p>
+        </div>
+    </li>
+    <li>
+        <a class="uk-accordion-title" href="#">wsgi.py</a>
+        <div class="uk-accordion-content">
+            <p>Модуль WSGI, используемый для настройки веб-сервера перед обработкой запросов.</p>
+        </div>
+    </li>
+    <li>
+        <a class="uk-accordion-title" href="#">templates/</a>
+        <div class="uk-accordion-content">
+            <p>Папка с HTML-шаблонами для представления данных.</p>
+        </div>
+    </li>
+    <li>
+        <a class="uk-accordion-title" href="#">static/</a>
+        <div class="uk-accordion-content">
+            <p>Папка для хранения статических файлов, таких как CSS, JavaScript и изображения.</p>
+        </div>
+    </li>
+    <li>
+        <a class="uk-accordion-title" href="#">apps.py</a>
+        <div class="uk-accordion-content">
+            <p>Корневой файл приложения, содержащий информацию о приложении и его моделях.</p>
+        </div>
+    </li>
+    <li>
+        <a class="uk-accordion-title" href="#">models.py</a>
+        <div class="uk-accordion-content">
+            <p>Файл моделей, содержащий определения моделей Django.</p>
+        </div>
+    </li>
+    <li>
+        <a class="uk-accordion-title" href="#">tests.py</a>
+        <div class="uk-accordion-content">
+            <p>Содержит тестовые сценарии для моделей и представлений.</p>
+        </div>
+    </li>
+    <li>
+        <a class="uk-accordion-title" href="#">views.py</a>
+        <div class="uk-accordion-content">
+            <p>Содержит определения функций представлений Django.</p>
+        </div>
+    </li>
+</ul>
+
+<div class="boundary-align uk-panel uk-placeholder">
+    <p>Стандартные выпадающие эелементы</p>
+    <div class="uk-inline">
+        <button class="uk-button uk-button-default" type="button">Наведите</button>
+        <div uk-dropdown>Идет бычок, качается, вздыхает на ходу: ох, доска кончается, сейчас я упаду!</div>
+    </div>
+    
+    <div class="uk-inline">
+        <button class="uk-button uk-button-default" type="button">Кликните</button>
+        <div uk-dropdown="mode: click">Идет бычок, качается, вздыхает на ходу: ох, доска кончается, сейчас я упаду!</div>
+    </div>
+</div>    
+
+<div class="boundary-align uk-panel uk-placeholder">
+    <p>Навигация в компоненте Dropdown</p>
+    <button class="uk-button uk-button-default" type="button">Наведение</button>
+        <div uk-dropdown>
+            <ul class="uk-nav uk-dropdown-nav">
+                <li class="uk-active"><a href="#">Активная ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li class="uk-nav-header">Заголовок</li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#">Ссылка</a></li>
+            </ul>
+        </div>
+</div>    
+
+<div class="boundary-align uk-panel uk-placeholder">
+    <p>Сетки в компоненте Dropdown</p>
+    <button class="uk-button uk-button-default" type="button">Наведите</button>
+        <div class="uk-width-large" uk-dropdown>
+            <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
+                <div>
+                    <ul class="uk-nav uk-dropdown-nav">
+                        <li class="uk-active"><a href="#">Активная ссылка</a></li>
+                        <li><a href="#">Ссылка</a></li>
+                        <li class="uk-nav-header">Заголовок</li>
+                        <li><a href="#">Ссылка</a></li>
+                        <li><a href="#">Ссылка</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Ссылка</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="uk-nav uk-dropdown-nav">
+                        <li class="uk-active"><a href="#">Активная ссылка</a></li>
+                        <li><a href="#">Ссылка</a></li>
+                        <li class="uk-nav-header">Заголовок</li>
+                        <li><a href="#">Ссылка</a></li>
+                        <li><a href="#">Ссылка</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Ссылка</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</div>
+
+<div class="boundary-align uk-panel uk-placeholder">
+    <p>Позиционирование</p>
+    <div class="uk-inline">
+        <button class="uk-button uk-button-default" type="button">Top Right</button>
+        <div uk-dropdown="pos: top-right">
+                <ul class="uk-nav uk-dropdown-nav">
+                    <li class="uk-active"><a href="#">Активная ссылка</a></li>
+                    <li><a href="#">Ссылка</a></li>
+                    <li class="uk-nav-header">Заголовок</li>
+                    <li><a href="#">Ссылка</a></li>
+                    <li><a href="#">Ссылка</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Ссылка</a></li>
+                </ul>
+            </div>
+        </div>
+    
+    <div class="uk-inline">
+        <button class="uk-button uk-button-default" type="button">Bottom Justify</button>
+        <div uk-dropdown="pos: bottom-justify">
+            <ul class="uk-nav uk-dropdown-nav">
+                <li class="uk-active"><a href="#">Активная ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li class="uk-nav-header">Заголовок</li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#">Ссылка</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="uk-inline">
+        <button class="uk-button uk-button-default" type="button">Right Center</button>
+        <div uk-dropdown="pos: right-center">
+            <ul class="uk-nav uk-dropdown-nav">
+                <li class="uk-active"><a href="#">Активная ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li class="uk-nav-header">Заголовок</li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#">Ссылка</a></li>
+            </ul>
+        </div>
+    </div>    
+</div>
+
+<div class="boundary-align uk-panel uk-placeholder">
+    <p>Установка границы всплытия</p>
+    <button class="uk-button uk-button-default uk-float-left" type="button">Justify</button>
+    <div uk-dropdown="pos: bottom-justify; boundary: .boundary-align; boundary-align: true">
+        <ul class="uk-nav uk-dropdown-nav">
+            <li class="uk-active"><a href="#">Активная ссылка</a></li>
+            <li><a href="#">Ссылка</a></li>
+            <li class="uk-nav-header">Заголовок</li>
+            <li><a href="#">Ссылка</a></li>
+            <li><a href="#">Ссылка</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#">Ссылка</a></li>
+        </ul>
+    </div>
+
+    <button class="uk-button uk-button-default uk-float-right" type="button">Center</button>
+    <div uk-dropdown="pos: bottom-center; boundary: .boundary-align; boundary-align: true">
+        <ul class="uk-nav uk-dropdown-nav">
+            <li class="uk-active"><a href="#">Активная ссылка</a></li>
+            <li><a href="#">Ссылка</a></li>
+            <li class="uk-nav-header">Заголовок</li>
+            <li><a href="#">Ссылка</a></li>
+            <li><a href="#">Ссылка</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#">Ссылка</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="boundary-align uk-panel uk-placeholder">
+    <p>Установка границы всплытия</p>
+    <button class="uk-button uk-button-default" type="button">Наведите</button>
+        <div uk-dropdown="offset: 80">
+                <ul class="uk-nav uk-dropdown-nav">
+                    <li class="uk-active"><a href="#">Активная ссылка</a></li>
+                    <li><a href="#">Ссылка</a></li>
+                    <li class="uk-nav-header">Заголовок</li>
+                    <li><a href="#">Ссылка</a></li>
+                    <li><a href="#">Ссылка</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Ссылка</a></li>
+                </ul>
+        </div>
+</div>
+
+<div class="boundary-align uk-panel uk-placeholder">
+    <p>Выравнивание относительно установленной границы</p>
+    <button class="uk-button uk-button-default" type="button">Наведите</button>
+        <div uk-dropdown="animation: uk-animation-slide-top-small; duration: 1000">
+            <ul class="uk-nav uk-dropdown-nav">
+                <li class="uk-active"><a href="#">Активная ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li class="uk-nav-header">Заголовок</li>
+                <li><a href="#">Ссылка</a></li>
+                <li><a href="#">Ссылка</a></li>
+                <li class="uk-nav-divider"></li>
+                <li><a href="#">Ссылка</a></li>
+            </ul>
+        </div>
+</div>
+</body>
+</html>
